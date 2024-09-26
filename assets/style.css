@@ -238,6 +238,13 @@ input[type="submit"] {
   padding: 0.5em 1em;
 }
 
+.localContact p {
+  width: 375px;
+  height: 100px;
+  margin-top: 30px;
+  vertical-align: middle;
+}
+
 @media all and (max-width: 1180px) {
   .picture {
     flex: 2;
