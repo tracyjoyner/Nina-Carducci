@@ -16,10 +16,14 @@
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
-      defer
     ></script>
     <script src="./assets/maugallery.js"></script>
     <script src="./assets/scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Nina Carducci</title>
     <meta name="description" content="Photographer Home Page" />
   </head>
@@ -39,11 +43,27 @@
           <li><a href="#contact">Contact</a></li>
           <li>
             <a
-              class="social-link"
+              class="social-link fa fa-instagram"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img src="assets/images/instagram.png" alt="Instagram"
-            /></a>
+              alt="Instagram"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="social-link fa fa-facebook"
+              href="#"
+              target="_blank"
+              alt="Facebook"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="social-link fa fa-twitter"
+              href="#"
+              target="_blank"
+              alt="Twitter"
+            ></a>
           </li>
         </ul>
       </div>
@@ -308,68 +328,68 @@
         </div>
         <div class="picture right">
           <img src="./assets/images/camera.avif" alt="camera" loading="lazy" />
-          <div class="localContact">
-            <p>
-              <meta
-                id="_opens9"
-                itemprop="opens"
-                content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30"
-              />
-              <meta
-                id="_closes10"
-                itemprop="closes"
-                content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30"
-              />
-              Adresse :
-              <span
-                id="_address3"
-                itemprop="address"
-                itemscope
-                itemtype="http://schema.org/PostalAddress"
-              >
-                <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
-                <span itemprop="addressLocality">33200 Bordeaux</span>,
-                <span itemprop="addressCountry">France</span></span
-              >.<br />
-              Numéro de téléphone :
-              <span id="_telephone2" itemprop="telephone"
-                >+33 (0)5 56 67 78 89</span
-              >
-              <br />
-              Disponibilité du
-              <span
-                id="_openingHoursSpecification7"
-                itemprop="openingHoursSpecification"
-                itemscope
-                itemtype="http://schema.org/OpeningHoursSpecification"
-                itemref="_opens9 _closes10"
-              >
-                <span
-                  itemprop="dayOfWeek"
-                  itemscope
-                  itemtype="http://schema.org/DayOfWeek"
-                >
-                  <span itemprop="name">lundi</span>
-                </span></span
-              >au
-              <span
-                id="_openingHoursSpecification11"
-                itemprop="openingHoursSpecification"
-                itemscope
-                itemtype="http://schema.org/OpeningHoursSpecification"
-                itemref="_opens9 _closes10"
-              >
-                <span
-                  itemprop="dayOfWeek"
-                  itemscope
-                  itemtype="http://schema.org/DayOfWeek"
-                >
-                  <span itemprop="name">vendredi</span>
-                </span></span
-              >de 10h à 19h.
-            </p>
-          </div>
         </div>
+      </div>
+      <div class="localContact">
+        <p>
+          <meta
+            id="_opens9"
+            itemprop="opens"
+            content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30"
+          />
+          <meta
+            id="_closes10"
+            itemprop="closes"
+            content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30"
+          />
+          Adresse :
+          <span
+            id="_address3"
+            itemprop="address"
+            itemscope
+            itemtype="http://schema.org/PostalAddress"
+          >
+            <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
+            <span itemprop="addressLocality">33200 Bordeaux</span>,
+            <span itemprop="addressCountry">France</span></span
+          >
+          Numéro de téléphone :
+          <span id="_telephone2" itemprop="telephone"
+            >+33 (0)5 56 67 78 89</span
+          >
+          <br />
+          Disponibilité du
+          <span
+            id="_openingHoursSpecification7"
+            itemprop="openingHoursSpecification"
+            itemscope
+            itemtype="http://schema.org/OpeningHoursSpecification"
+            itemref="_opens9 _closes10"
+          >
+            <span
+              itemprop="dayOfWeek"
+              itemscope
+              itemtype="http://schema.org/DayOfWeek"
+            >
+              <span itemprop="name">lundi</span>
+            </span></span
+          >au
+          <span
+            id="_openingHoursSpecification11"
+            itemprop="openingHoursSpecification"
+            itemscope
+            itemtype="http://schema.org/OpeningHoursSpecification"
+            itemref="_opens9 _closes10"
+          >
+            <span
+              itemprop="dayOfWeek"
+              itemscope
+              itemtype="http://schema.org/DayOfWeek"
+            >
+              <span itemprop="name">vendredi</span>
+            </span></span
+          >de 10h à 19h.
+        </p>
       </div>
     </div>
   </body>

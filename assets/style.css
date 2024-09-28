@@ -38,8 +38,11 @@ body {
   color: #000;
 }
 
-.social-link img {
-  width: 20px;
+.fa-instagram,
+.fa-facebook,
+.fa-twitter {
+  background: white;
+  color: black;
 }
 
 #about {
@@ -269,6 +272,7 @@ input[type="submit"] {
   }
   .picture {
     width: 50%;
+    aspect-ratio: auto 380 / 380;
   }
   .picture.left::before {
     width: 100%;
