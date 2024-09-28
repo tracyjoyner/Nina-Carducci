@@ -16,6 +16,7 @@
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
+      defer
     ></script>
     <script src="./assets/maugallery.js"></script>
     <script src="./assets/scripts.js"></script>
@@ -23,8 +24,13 @@
     <meta name="description" content="Photographer Home Page" />
   </head>
   <body>
-    <div class="top-header">
-      <h3 class="name">Nina Carducci</h3>
+    <div
+      itemscope
+      itemtype="http://schema.org/LocalBusiness"
+      itemref="_telephone2 _address3 _openingHoursSpecification7 _openingHoursSpecification11"
+      class="top-header"
+    >
+      <h3 itemprop="name" class="name">Nina Carducci</h3>
       <div class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
@@ -83,6 +89,7 @@
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.avif"
               class="d-block w-100"
               alt="crowd with arms raised"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -90,6 +97,7 @@
               src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.avif"
               class="d-block w-100"
               alt="wedding couple dipping"
+              loading="lazy"
             />
           </div>
         </div>
@@ -115,7 +123,7 @@
     </div>
     <div id="about">
       <div class="picture left">
-        <img src="./assets/images/nina.avif" alt="nina" />
+        <img src="./assets/images/nina.avif" alt="nina" loading="lazy" />
       </div>
       <div id="about-me">
         <h3 class="about-me__title">A propos de moi</h3>
@@ -299,12 +307,66 @@
           </form>
         </div>
         <div class="picture right">
-          <img src="./assets/images/camera.avif" alt="camera" />
+          <img src="./assets/images/camera.avif" alt="camera" loading="lazy" />
           <div class="localContact">
             <p>
-              Adresse : 68 avenue Alsace-Lorraine, 33200 Bordeaux, France.<br />
-              Numéro de téléphone : +33 (0)5 56 67 78 89. <br />
-              Disponibilité du lundi au vendredi de 10h à 19h.
+              <meta
+                id="_opens9"
+                itemprop="opens"
+                content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30"
+              />
+              <meta
+                id="_closes10"
+                itemprop="closes"
+                content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30"
+              />
+              Adresse :
+              <span
+                id="_address3"
+                itemprop="address"
+                itemscope
+                itemtype="http://schema.org/PostalAddress"
+              >
+                <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
+                <span itemprop="addressLocality">33200 Bordeaux</span>,
+                <span itemprop="addressCountry">France</span></span
+              >.<br />
+              Numéro de téléphone :
+              <span id="_telephone2" itemprop="telephone"
+                >+33 (0)5 56 67 78 89</span
+              >
+              <br />
+              Disponibilité du
+              <span
+                id="_openingHoursSpecification7"
+                itemprop="openingHoursSpecification"
+                itemscope
+                itemtype="http://schema.org/OpeningHoursSpecification"
+                itemref="_opens9 _closes10"
+              >
+                <span
+                  itemprop="dayOfWeek"
+                  itemscope
+                  itemtype="http://schema.org/DayOfWeek"
+                >
+                  <span itemprop="name">lundi</span>
+                </span></span
+              >au
+              <span
+                id="_openingHoursSpecification11"
+                itemprop="openingHoursSpecification"
+                itemscope
+                itemtype="http://schema.org/OpeningHoursSpecification"
+                itemref="_opens9 _closes10"
+              >
+                <span
+                  itemprop="dayOfWeek"
+                  itemscope
+                  itemtype="http://schema.org/DayOfWeek"
+                >
+                  <span itemprop="name">vendredi</span>
+                </span></span
+              >de 10h à 19h.
             </p>
           </div>
         </div>
